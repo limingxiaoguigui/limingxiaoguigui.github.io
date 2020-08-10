@@ -64,6 +64,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-快速搭建Nodejs环境" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/08/11/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BANodejs%E7%8E%AF%E5%A2%83/" class="article-date">
+  <time datetime="2020-08-10T16:16:02.000Z" itemprop="datePublished">2020-08-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/11/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BANodejs%E7%8E%AF%E5%A2%83/">快速搭建 Nodejs 环境</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="linux-root-用户"><a href="#linux-root-用户" class="headerlink" title="linux(root 用户)"></a>linux(root 用户)</h2><h3 id="克隆-nvm"><a href="#克隆-nvm" class="headerlink" title="克隆 nvm"></a>克隆 nvm</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> NVM_DIR=<span class="string">&quot;<span class="variable">$HOME</span>/.nvm&quot;</span></span><br><span class="line">[ -s <span class="string">&quot;<span class="variable">$NVM_DIR</span>/nvm.sh&quot;</span> ] &amp;&amp; \. <span class="string">&quot;<span class="variable">$NVM_DIR</span>/nvm.sh&quot;</span></span><br><span class="line">[ -s <span class="string">&quot;<span class="variable">$NVM_DIR</span>/bash_completion&quot;</span> ] &amp;&amp; \. <span class="string">&quot;<span class="variable">$NVM_DIR</span>/bash_completion&quot;</span></span><br><span class="line"></span><br><span class="line">nvm --version</span><br></pre></td></tr></table></figure>
+
+<h3 id="通过-nvm-安装-node"><a href="#通过-nvm-安装-node" class="headerlink" title="通过 nvm 安装 node"></a>通过 nvm 安装 node</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nvm install 14.3.0</span><br><span class="line">nvm use  14.3.0</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm ls-remote</span><br><span class="line">npm  -v</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org  //使用淘宝镜像</span><br></pre></td></tr></table></figure>
+
+<h2 id="window-使用-Cmder-命令行"><a href="#window-使用-Cmder-命令行" class="headerlink" title="window(使用 Cmder 命令行)"></a>window(使用 Cmder 命令行)</h2><h3 id="下载-nvm-安装包并安装"><a href="#下载-nvm-安装包并安装" class="headerlink" title="下载 nvm 安装包并安装"></a>下载 nvm 安装包并安装</h3><p><a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases">nvm-windows</a></p>
+<h3 id="查看版本-1"><a href="#查看版本-1" class="headerlink" title="查看版本"></a>查看版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">nvm list　　//查看目前已经安装的版本</span><br><span class="line">nvm list available //显示可下载版本的部分列表</span><br><span class="line">nvm install 10.15.0 //安装指定的版本的nodejs</span><br><span class="line">nvm use 10.15.0 //使用指定版本的nodejs</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org  //使用淘宝镜像</span><br><span class="line"></span><br><span class="line">cnpm sync connect //同步模块</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/08/11/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BANodejs%E7%8E%AF%E5%A2%83/" data-id="ckdopc8ol00038cwcb2fdauzs" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-excellent_article" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/08/10/excellent_article/" class="article-date">
@@ -162,42 +208,6 @@
     </div>
     <footer class="article-footer">
       <a data-url="http://yoursite.com/2020/06/07/js%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" data-id="ckdopc8oi00018cwccp12gdjq" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-快速搭建Nodejs环境" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/06/06/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BANodejs%E7%8E%AF%E5%A2%83/" class="article-date">
-  <time datetime="2020-06-06T15:47:56.246Z" itemprop="datePublished">2020-06-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="快速搭建-Nodejs-环境"><a href="#快速搭建-Nodejs-环境" class="headerlink" title="快速搭建 Nodejs 环境"></a>快速搭建 Nodejs 环境</h1><h2 id="linux-root-用户"><a href="#linux-root-用户" class="headerlink" title="linux(root 用户)"></a>linux(root 用户)</h2><h3 id="克隆-nvm"><a href="#克隆-nvm" class="headerlink" title="克隆 nvm"></a>克隆 nvm</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> NVM_DIR=<span class="string">&quot;<span class="variable">$HOME</span>/.nvm&quot;</span></span><br><span class="line">[ -s <span class="string">&quot;<span class="variable">$NVM_DIR</span>/nvm.sh&quot;</span> ] &amp;&amp; \. <span class="string">&quot;<span class="variable">$NVM_DIR</span>/nvm.sh&quot;</span></span><br><span class="line">[ -s <span class="string">&quot;<span class="variable">$NVM_DIR</span>/bash_completion&quot;</span> ] &amp;&amp; \. <span class="string">&quot;<span class="variable">$NVM_DIR</span>/bash_completion&quot;</span></span><br><span class="line"></span><br><span class="line">nvm --version</span><br></pre></td></tr></table></figure>
-
-<h3 id="通过-nvm-安装-node"><a href="#通过-nvm-安装-node" class="headerlink" title="通过 nvm 安装 node"></a>通过 nvm 安装 node</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nvm install 14.3.0</span><br><span class="line">nvm use  14.3.0</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">nvm ls-remote</span><br><span class="line">npm  -v</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org  //使用淘宝镜像</span><br></pre></td></tr></table></figure>
-
-<h2 id="window-使用-Cmder-命令行"><a href="#window-使用-Cmder-命令行" class="headerlink" title="window(使用 Cmder 命令行)"></a>window(使用 Cmder 命令行)</h2><h3 id="下载-nvm-安装包并安装"><a href="#下载-nvm-安装包并安装" class="headerlink" title="下载 nvm 安装包并安装"></a>下载 nvm 安装包并安装</h3><p><a target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases">nvm-windows</a></p>
-<h3 id="查看版本-1"><a href="#查看版本-1" class="headerlink" title="查看版本"></a>查看版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm -v</span><br></pre></td></tr></table></figure>
-
-<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">nvm list　　//查看目前已经安装的版本</span><br><span class="line">nvm list available //显示可下载版本的部分列表</span><br><span class="line">nvm install 10.15.0 //安装指定的版本的nodejs</span><br><span class="line">nvm use 10.15.0 //使用指定版本的nodejs</span><br><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org  //使用淘宝镜像</span><br><span class="line"></span><br><span class="line">cnpm sync connect //同步模块</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/06/06/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BANodejs%E7%8E%AF%E5%A2%83/" data-id="ckdopc8ol00038cwcb2fdauzs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -307,6 +317,10 @@
       <ul>
         
           <li>
+            <a href="/2020/08/11/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BANodejs%E7%8E%AF%E5%A2%83/">快速搭建 Nodejs 环境</a>
+          </li>
+        
+          <li>
             <a href="/2020/08/10/excellent_article/">(no title)</a>
           </li>
         
@@ -316,10 +330,6 @@
         
           <li>
             <a href="/2020/06/07/js%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2020/06/06/%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BANodejs%E7%8E%AF%E5%A2%83/">(no title)</a>
           </li>
         
           <li>
